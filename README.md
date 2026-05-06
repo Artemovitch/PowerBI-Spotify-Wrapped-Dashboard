@@ -46,7 +46,13 @@ IF(NOT(ISBLANK(_previous)), "vs PY: " & FORMAT(_previous, "#,##0") & " (" & FORM
 
 ## Project Insights & Future Enhancements
 
-Building this dimensional model revealed a few interesting behavioral trends, such as a heavy reliance on my top 5 artists despite exploring nearly 6,000 unique creators across the dataset.
+Building this dimensional model allowed me to uncover insights far beyond the standard Spotify Wrapped by analyzing my complete, multi-year history. Key takeaways include:
+
+* **Behavioral Heatmaps:** Identified exact peak listening hours and days of the week where my engagement spikes or drops off entirely.
+
+* **Granular Drill-Downs:** Engineered a Detailed View page to slice and filter my top albums and tracks by specific platforms, dates, and times.
+
+* **The "Top 5" Contrast:** Revealed a heavy reliance on my top 5 artists, accounting for a massive share of my listening time despite exploring nearly 6,000 unique creators.
 
 For future iterations of this project, I plan to:
 
