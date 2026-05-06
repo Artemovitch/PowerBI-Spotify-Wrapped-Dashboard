@@ -17,6 +17,7 @@ This project is an end-to-end data pipeline and visualization of my personal Spo
 2. **Listening Patterns:** A matrix heatmap showing listening intensity by hour and day of the week, alongside a dynamic scatter plot analyzing average listening time versus track frequency using what-if parameters.
 <img width="1574" height="1051" alt="image" src="https://github.com/user-attachments/assets/9f72f8a3-de63-4a73-af37-db8f57b6674b" />
 <img width="1577" height="1052" alt="image" src="https://github.com/user-attachments/assets/94355bba-42b3-4047-bb61-1c43ba47d654" />
+<img width="1212" height="807" alt="image" src="https://github.com/user-attachments/assets/cc9ffcd4-08a2-45c3-8c0e-bbf28db14cb6" />
 
 3. **Data Model:** A star schema architecture featuring a centralized fact table connected to a custom Date table and disconnected parameter tables.
 <img width="861" height="612" alt="image" src="https://github.com/user-attachments/assets/31c2331f-28f9-46d7-a970-ac160dc15cbe" />
@@ -43,7 +44,8 @@ RETURN
 IF(NOT(ISBLANK(_previous)), "vs PY: " & FORMAT(_previous, "#,##0") & " (" & FORMAT(_YoY, "0.00%") & ")", "No Data")
 ```
 
-**Project Insights & Future Enhancements**
+## Project Insights & Future Enhancements
+
 Building this dimensional model revealed a few interesting behavioral trends, such as a heavy reliance on my top 5 artists despite exploring nearly 6,000 unique creators across the dataset.
 
 For future iterations of this project, I plan to:
