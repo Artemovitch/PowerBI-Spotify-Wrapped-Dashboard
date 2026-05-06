@@ -1,4 +1,3 @@
-# PowerBI-Spotify-Wrapped-Dashboard
 # Personal Spotify Listening Analysis
 
 ## Project Overview
@@ -41,14 +40,14 @@ VAR _YoY = IF(NOT(ISBLANK(_previous)), DIVIDE(_latest - _previous, _previous, 0)
 
 RETURN
 
-IF(NOT(ISBLANK(_previous)), "vs PY: " & FORMAT(_previous, "#,##0") & " (" & FORMAT(_YoY, "0.00%") & ")", "No Data")
+IF(NOT(ISBLANK(_previous)), "vs PY: " & FORMAT(_previous, "#,##0") & " (" & FORMAT(_YoY, "0.00%") & ")", "No Data")```
 
 
-Project Insights & Future Enhancements
+**Project Insights & Future Enhancements**
 Building this dimensional model revealed a few interesting behavioral trends, such as a heavy reliance on my top 5 artists despite exploring nearly 6,000 unique creators across the dataset.
 
 For future iterations of this project, I plan to:
 
-Incorporate an API: Automate the data pipeline by connecting directly to the Spotify Web API instead of relying on static JSON exports.
+* **Incorporate an API:** Automate the data pipeline by connecting directly to the Spotify Web API instead of relying on static JSON exports.
 
-Genre Analysis: Integrate external metadata to categorize artists by genre and track shifting musical tastes over time.
+* **Genre Analysis:** Integrate external metadata to categorize artists by genre and track shifting musical tastes over time.
