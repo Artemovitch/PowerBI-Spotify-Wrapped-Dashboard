@@ -40,8 +40,8 @@ VAR _YoY = IF(NOT(ISBLANK(_previous)), DIVIDE(_latest - _previous, _previous, 0)
 
 RETURN
 
-IF(NOT(ISBLANK(_previous)), "vs PY: " & FORMAT(_previous, "#,##0") & " (" & FORMAT(_YoY, "0.00%") & ")", "No Data")```
-
+IF(NOT(ISBLANK(_previous)), "vs PY: " & FORMAT(_previous, "#,##0") & " (" & FORMAT(_YoY, "0.00%") & ")", "No Data")
+```
 
 **Project Insights & Future Enhancements**
 Building this dimensional model revealed a few interesting behavioral trends, such as a heavy reliance on my top 5 artists despite exploring nearly 6,000 unique creators across the dataset.
